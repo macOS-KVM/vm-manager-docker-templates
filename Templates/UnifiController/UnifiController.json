@@ -29,7 +29,7 @@
             "default": 1024,
             "description": "Memory startup in MB",
             "editable": true
-        },
+        }
     },
     "volumes": [
         {
