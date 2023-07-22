@@ -11,26 +11,29 @@
         "ssl": true
     },
     "command": [],
-    "env": {
-        "TZ": {
+    "env": [
+        {
+            "name": "TZ",
             "type": "str",
             "default": "Europe/Brussels",
             "description": "Timezone (https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)",
             "editable": true
         },
-        "MEM_LIMIT": {
+        {
+            "name": "MEM_LIMIT",
             "type": "int",
             "default": 1024,
             "description": "Memory limit in MB",
             "editable": true
         },
-        "MEM_STARTUP": {
+        {
+            "name": "MEM_STARTUP",
             "type": "int",
             "default": 1024,
             "description": "Memory startup in MB",
             "editable": true
         }
-    },
+    ],
     "volumes": [
         {
             "default": "/home/unifi-controller",

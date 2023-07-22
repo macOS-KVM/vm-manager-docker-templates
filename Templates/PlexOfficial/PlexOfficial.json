@@ -11,20 +11,22 @@
         "ssl": false
     },
     "command": [],
-    "env": {
-        "TZ": {
+    "env": [
+        {
+            "name": "TZ",
             "type": "str",
             "default": "Europe/Brussels",
             "description": "Timezone (https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)",
             "editable": true
         },
-        "PLEX_CLAIM": {
+        {
+            "name": "PLEX_CLAIM",
             "type": "str",
             "default": "claim-xxxxxxxxxxxxxxxxxxxx",
             "description": "Plex Claim Token (https://www.plex.tv/claim/)",
             "editable": true
         }
-    },
+    ],
     "volumes": [
         {
             "default": "/home/plex/config",

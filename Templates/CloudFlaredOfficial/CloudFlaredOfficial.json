@@ -22,7 +22,7 @@
         "editable": true
       }
     ],
-    "env": {},
+    "env": [],
     "volumes": [],
     "ports": []
 }

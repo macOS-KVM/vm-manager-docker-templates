@@ -11,7 +11,7 @@
         "ssl": true
     },
     "command": [],
-    "env": {},
+    "env": [],
     "volumes": [
         {
             "default": "/var/run/docker.sock",
