@@ -1,0 +1,47 @@
+{
+    "name": "Portainer CE Official",
+    "maintainer": "Portainer.io",
+    "repository": "portainer/portainer-ce",
+    "tag": "latest",
+    "docker-hub-url": "https://hub.docker.com/r/portainer/portainer-ce",
+    "description": "Portainer Community Edition is a lightweight service delivery platform for containerized applications that can be used to manage Docker, Swarm, Kubernetes and ACI environments. It is designed to be as simple to deploy as it is to use. The application allows you to manage all your orchestrator resources (containers, images, volumes, networks and more) through a smart GUI and/or an extensive API. Portainer consists of a single container that can run on any cluster. It can be deployed as a Linux container or a Windows native container.",
+    "webui": {
+        "enable": true,
+        "container-port": 9443,
+        "ssl": true
+    },
+    "command": [],
+    "env": {},
+    "volumes": [
+        {
+            "default": "/var/run/docker.sock",
+            "bind": "/var/run/docker.sock",
+            "mode": "rw",
+            "description": "Docker socket",
+            "editable": true
+        },
+        {
+            "default": "/home/portainer-ce",
+            "bind": "/data",
+            "mode": "rw",
+            "description": "Portainer data folder",
+            "editable": true
+        }
+    ],
+    "ports": [
+        {
+            "default": 9443,
+            "bind": 9443,
+            "type": "tcp",
+            "description": "Webui",
+            "editable": true
+        },
+        {
+            "default": 8000,
+            "bind": 8000,
+            "type": "tcp",
+            "description": "External access",
+            "editable": false
+        }
+    ]
+}

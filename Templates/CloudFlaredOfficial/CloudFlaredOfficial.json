@@ -1,0 +1,28 @@
+{
+    "name": "Cloudflared Official",
+    "maintainer": "Cloudflare Inc.",
+    "repository": "cloudflare/cloudflared",
+    "tag": "latest",
+    "docker-hub-url": "https://hub.docker.com/r/cloudflare/cloudflared",
+    "description": "Client for Cloudflare Tunnel, a daemon that exposes private services through the Cloudflare edge.",
+    "webui": {
+      "enable": false
+    },
+    "command": [
+      {
+        "name": "Base command",
+        "description": "Base command",
+        "value": "tunnel --no-autoupdate run --token",
+        "editable": false
+      },
+      {
+        "name": "token",
+        "description": "Cloudflare Tunnel Token. Get it from the Cloudflare dashboard.",
+        "value": "",
+        "editable": true
+      }
+    ],
+    "env": {},
+    "volumes": [],
+    "ports": []
+}

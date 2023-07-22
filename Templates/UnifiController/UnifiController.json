@@ -1,0 +1,73 @@
+{
+    "name": "Unifi Controller",
+    "maintainer": "Linuxserver.io",
+    "repository": "lscr.io/linuxserver/unifi-controller",
+    "tag": "latest",
+    "docker-hub-url": "https://hub.docker.com/r/linuxserver/unifi-controller",
+    "description": "The Unifi-controller software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.",
+    "webui": {
+        "enable": true,
+        "container-port": 8443,
+        "ssl": true
+    },
+    "command": [],
+    "env": {
+        "TZ": {
+            "type": "str",
+            "default": "Europe/Brussels",
+            "description": "Timezone (https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)",
+            "editable": true
+        },
+        "MEM_LIMIT": {
+            "type": "int",
+            "default": 1024,
+            "description": "Memory limit in MB",
+            "editable": true
+        },
+        "MEM_STARTUP": {
+            "type": "int",
+            "default": 1024,
+            "description": "Memory startup in MB",
+            "editable": true
+        },
+    },
+    "volumes": [
+        {
+            "default": "/home/unifi-controller",
+            "bind": "/config",
+            "mode": "rw",
+            "description": "Unifi Controller config folder",
+            "editable": true
+        }
+    ],
+    "ports": [
+        {
+            "default": 8443,
+            "bind": 8443,
+            "type": "tcp",
+            "description": "Unifi web admin port",
+            "editable": true
+        },
+        {
+            "default": 3478,
+            "bind": 3478,
+            "type": "udp",
+            "description": "Unifi STUN port",
+            "editable": false
+        },
+        {
+            "default": 10001,
+            "bind": 10001,
+            "type": "udp",
+            "description": "Required for AP discovery",
+            "editable": false
+        },
+        {
+            "default": 8080,
+            "bind": 8080,
+            "type": "tcp",
+            "description": "Required for device communication",
+            "editable": false
+        }
+    ]
+}
