@@ -3,7 +3,9 @@
     "maintainer": "Plex Inc.",
     "repository": "plexinc/pms-docker",
     "tag": "latest",
-    "docker-hub-url": "https://hub.docker.com/r/plexinc/pms-docker/",
+    "url": {
+        "docker-hub": "https://hub.docker.com/r/plexinc/pms-docker/"
+    },
     "description": "Plex Media Server organizes your video, music, and photo collections and streams them to all of your screens.",
     "webui": {
         "enable": true,
@@ -15,7 +17,7 @@
         {
             "name": "TZ",
             "type": "str",
-            "value": "Europe/Brussels",
+            "value": "",
             "description": "Timezone (https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)",
             "editable": true,
             "regexrules": [

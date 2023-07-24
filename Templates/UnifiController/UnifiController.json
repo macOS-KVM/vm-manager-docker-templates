@@ -3,7 +3,9 @@
     "maintainer": "Linuxserver.io",
     "repository": "lscr.io/linuxserver/unifi-controller",
     "tag": "latest",
-    "docker-hub-url": "https://hub.docker.com/r/linuxserver/unifi-controller",
+    "url": {
+        "docker-hub": "https://hub.docker.com/r/linuxserver/unifi-controller"
+    },
     "description": "The Unifi-controller software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.",
     "webui": {
         "enable": true,
