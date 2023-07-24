@@ -17,14 +17,26 @@
             "type": "str",
             "default": "Europe/Brussels",
             "description": "Timezone (https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)",
-            "editable": true
+            "editable": true,
+            "regexrules": [
+                {
+                    "regex": "[A-Za-z]+/[A-Za-z_]+",
+                    "message": "Invalid Timezone"
+                }
+            ]
         },
         {
             "name": "PLEX_CLAIM",
             "type": "str",
             "default": "claim-xxxxxxxxxxxxxxxxxxxx",
             "description": "Plex Claim Token (https://www.plex.tv/claim/)",
-            "editable": true
+            "editable": true,
+            "regexrules": [
+                {
+                    "regex": "claim-[a-zA-Z0-9]{20}",
+                    "message": "Invalid Plex Claim Token"
+                }
+            ]
         }
     ],
     "volumes": [

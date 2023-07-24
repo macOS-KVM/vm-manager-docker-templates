@@ -17,21 +17,39 @@
             "type": "str",
             "default": "Europe/Brussels",
             "description": "Timezone (https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)",
-            "editable": true
+            "editable": true,
+            "regexrules": [
+                {
+                    "rule": "^[A-Za-z]+/[A-Za-z]+$",
+                    "message": "Invalid timezone"
+                }
+            ]
         },
         {
             "name": "MEM_LIMIT",
             "type": "int",
             "default": 1024,
             "description": "Memory limit in MB",
-            "editable": true
+            "editable": true,
+            "regexrules": [
+                {
+                    "rule": "^[0-9]+$",
+                    "message": "Invalid memory limit"
+                }
+            ]
         },
         {
             "name": "MEM_STARTUP",
             "type": "int",
             "default": 1024,
-            "description": "Memory startup in MB",
-            "editable": true
+            "description": "Startup memory in MB",
+            "editable": true,
+            "regexrules": [
+                {
+                    "rule": "^[0-9]+$",
+                    "message": "Invalid startup memory"
+                }
+            ]
         }
     ],
     "volumes": [
