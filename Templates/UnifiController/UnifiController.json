@@ -15,7 +15,7 @@
         {
             "name": "TZ",
             "type": "str",
-            "default": "Europe/Brussels",
+            "value": "Europe/Brussels",
             "description": "Timezone (https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)",
             "editable": true,
             "regexrules": [
@@ -28,7 +28,7 @@
         {
             "name": "MEM_LIMIT",
             "type": "int",
-            "default": 1024,
+            "value": 1024,
             "description": "Memory limit in MB",
             "editable": true,
             "regexrules": [
@@ -41,7 +41,7 @@
         {
             "name": "MEM_STARTUP",
             "type": "int",
-            "default": 1024,
+            "value": 1024,
             "description": "Startup memory in MB",
             "editable": true,
             "regexrules": [
@@ -54,7 +54,7 @@
     ],
     "volumes": [
         {
-            "default": "/home/unifi-controller",
+            "value": "/home/unifi-controller",
             "bind": "/config",
             "mode": "rw",
             "description": "Unifi Controller config folder",
@@ -63,28 +63,28 @@
     ],
     "ports": [
         {
-            "default": 8443,
+            "value": 8443,
             "bind": 8443,
             "type": "tcp",
             "description": "Unifi web admin port",
             "editable": true
         },
         {
-            "default": 3478,
+            "value": 3478,
             "bind": 3478,
             "type": "udp",
             "description": "Unifi STUN port",
             "editable": false
         },
         {
-            "default": 10001,
+            "value": 10001,
             "bind": 10001,
             "type": "udp",
             "description": "Required for AP discovery",
             "editable": false
         },
         {
-            "default": 8080,
+            "value": 8080,
             "bind": 8080,
             "type": "tcp",
             "description": "Required for device communication",

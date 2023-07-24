@@ -14,14 +14,14 @@
     "env": [],
     "volumes": [
         {
-            "default": "/var/run/docker.sock",
+            "value": "/var/run/docker.sock",
             "bind": "/var/run/docker.sock",
             "mode": "rw",
             "description": "Docker socket",
             "editable": true
         },
         {
-            "default": "/home/portainer-ce",
+            "value": "/home/portainer-ce",
             "bind": "/data",
             "mode": "rw",
             "description": "Portainer data folder",
@@ -30,14 +30,14 @@
     ],
     "ports": [
         {
-            "default": 9443,
+            "value": 9443,
             "bind": 9443,
             "type": "tcp",
             "description": "Webui",
             "editable": true
         },
         {
-            "default": 8000,
+            "value": 8000,
             "bind": 8000,
             "type": "tcp",
             "description": "External access",
