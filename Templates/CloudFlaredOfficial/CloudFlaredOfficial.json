@@ -8,7 +8,8 @@
     },
     "description": "Client for Cloudflare Tunnel, a daemon that exposes private services through the Cloudflare edge.",
     "webui": {
-      "enable": false
+      "enable": false,
+      "url": "https://one.dash.cloudflare.com"
     },
     "command": [
       {

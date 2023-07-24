@@ -10,7 +10,8 @@
     "webui": {
         "enable": true,
         "container-port": 32400,
-        "ssl": false
+        "ssl": false,
+        "path": "/web"
     },
     "command": [],
     "env": [
