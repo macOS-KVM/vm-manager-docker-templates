@@ -13,7 +13,7 @@
     "config": {
         "repository": "portainer/portainer-ce",
         "tag": "latest",
-         "command": [],
+        "command": [],
         "env": [],
         "volumes": [
             {
