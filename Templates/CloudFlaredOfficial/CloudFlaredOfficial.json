@@ -26,7 +26,7 @@
         "editable": true,
         "regexrules": [
           {
-            "regex": "^(?!\\s*$).+",
+            "regex": "^(?!\\\\s*$).+",
             "message": "Token cannot be empty"
           }
         ]
