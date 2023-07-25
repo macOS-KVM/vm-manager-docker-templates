@@ -1,8 +1,6 @@
 {
     "name": "Portainer CE Official",
     "maintainer": "Portainer.io",
-    "repository": "portainer/portainer-ce",
-    "tag": "latest",
     "url": {
         "docker-hub": "https://hub.docker.com/r/portainer/portainer-ce"
     },
@@ -12,38 +10,42 @@
         "container-port": 9443,
         "ssl": true
     },
-    "command": [],
-    "env": [],
-    "volumes": [
-        {
-            "value": "/var/run/docker.sock",
-            "bind": "/var/run/docker.sock",
-            "mode": "rw",
-            "description": "Docker socket",
-            "editable": true
-        },
-        {
-            "value": "/home/portainer-ce",
-            "bind": "/data",
-            "mode": "rw",
-            "description": "Portainer data folder",
-            "editable": true
-        }
-    ],
-    "ports": [
-        {
-            "value": 9443,
-            "bind": 9443,
-            "type": "tcp",
-            "description": "Webui",
-            "editable": true
-        },
-        {
-            "value": 8000,
-            "bind": 8000,
-            "type": "tcp",
-            "description": "External access",
-            "editable": false
-        }
-    ]
+    "config": {
+        "repository": "portainer/portainer-ce",
+        "tag": "latest",
+         "command": [],
+        "env": [],
+        "volumes": [
+            {
+                "value": "/var/run/docker.sock",
+                "bind": "/var/run/docker.sock",
+                "mode": "rw",
+                "description": "Docker socket",
+                "editable": true
+            },
+            {
+                "value": "/home/portainer-ce",
+                "bind": "/data",
+                "mode": "rw",
+                "description": "Portainer data folder",
+                "editable": true
+            }
+        ],
+        "ports": [
+            {
+                "value": 9443,
+                "bind": 9443,
+                "type": "tcp",
+                "description": "Webui",
+                "editable": true
+            },
+            {
+                "value": 8000,
+                "bind": 8000,
+                "type": "tcp",
+                "description": "External access",
+                "editable": false
+            }
+        ]
+    }
 }

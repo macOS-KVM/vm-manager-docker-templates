@@ -1,17 +1,18 @@
 {
     "name": "Cloudflared Official",
     "maintainer": "Cloudflare Inc.",
-    "repository": "cloudflare/cloudflared",
-    "tag": "latest",
     "url": {
       "docker-hub": "https://hub.docker.com/r/cloudflare/cloudflared"
     },
     "description": "Client for Cloudflare Tunnel, a daemon that exposes private services through the Cloudflare edge.",
     "webui": {
-      "enable": false,
+      "enable": true,
       "url": "https://one.dash.cloudflare.com"
     },
-    "command": [
+    "config": {
+      "repository": "cloudflare/cloudflared",
+      "tag": "latest",
+      "command": [
       {
         "name": "Base command",
         "description": "Base command",
@@ -35,4 +36,5 @@
     "env": [],
     "volumes": [],
     "ports": []
+    }
 }

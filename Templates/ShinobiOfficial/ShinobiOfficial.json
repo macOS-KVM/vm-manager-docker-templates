@@ -1,8 +1,6 @@
 {
     "name": "Shinobi Pro Official",
     "maintainer": "Shinobi Systems",
-    "repository": "registry.gitlab.com/shinobi-systems/shinobi",
-    "tag": "master",
     "url": {
         "external": "https://gitlab.com/Shinobi-Systems/Shinobi/-/tree/dev/Docker"
     },
@@ -12,66 +10,70 @@
         "container-port": 8080,
         "ssl": true
     },
-    "command": [],
-    "env": [],
-    "volumes": [
-        {
-            "value": "/dev/shm/Shinobi/streams",
-            "bind": "/dev/shm/streams",
-            "mode": "rw",
-            "description": "Shinobi streams folder",
-            "editable": true
-        },
-        {
-            "value": "/home/Shinobi/config",
-            "bind": "/config",
-            "mode": "rw",
-            "description": "Shinobi config folder",
-            "editable": true
-        },
-        {
-            "value": "/home/Shinobi/libs/customAutoLoad",
-            "bind": "/home/Shinobi/libs/customAutoLoad",
-            "mode": "rw",
-            "description": "Shinobi customAutoLoad folder",
-            "editable": true
-        },
-        {
-            "value": "/home/Shinobi/database",
-            "bind": "/var/lib/mysql",
-            "mode": "rw",
-            "description": "Shinobi database folder",
-            "editable": true
-        },
-        {
-            "value": "/home/Shinobi/videos",
-            "bind": "/home/Shinobi/videos",
-            "mode": "rw",
-            "description": "Shinobi videos folder",
-            "editable": true
-        },
-        {
-            "value": "/home/Shinobi/plugins",
-            "bind": "/home/Shinobi/plugins",
-            "mode": "rw",
-            "description": "Shinobi plugins folder",
-            "editable": true
-        },
-        {
-            "value": "/etc/localtime",
-            "bind": "/etc/localtime",
-            "mode": "ro",
-            "description": "Timezone",
-            "editable": false
-        }
-    ],
-    "ports": [
-        {
-            "value": 8080,
-            "bind": 8080,
-            "type": "tcp",
-            "description": "Shinobi WebUI",
-            "editable": true
-        }
-    ]
+    "config": {
+        "repository": "registry.gitlab.com/shinobi-systems/shinobi",
+        "tag": "master",
+        "command": [],
+        "env": [],
+        "volumes": [
+            {
+                "value": "/dev/shm/Shinobi/streams",
+                "bind": "/dev/shm/streams",
+                "mode": "rw",
+                "description": "Shinobi streams folder",
+                "editable": true
+            },
+            {
+                "value": "/home/Shinobi/config",
+                "bind": "/config",
+                "mode": "rw",
+                "description": "Shinobi config folder",
+                "editable": true
+            },
+            {
+                "value": "/home/Shinobi/libs/customAutoLoad",
+                "bind": "/home/Shinobi/libs/customAutoLoad",
+                "mode": "rw",
+                "description": "Shinobi customAutoLoad folder",
+                "editable": true
+            },
+            {
+                "value": "/home/Shinobi/database",
+                "bind": "/var/lib/mysql",
+                "mode": "rw",
+                "description": "Shinobi database folder",
+                "editable": true
+            },
+            {
+                "value": "/home/Shinobi/videos",
+                "bind": "/home/Shinobi/videos",
+                "mode": "rw",
+                "description": "Shinobi videos folder",
+                "editable": true
+            },
+            {
+                "value": "/home/Shinobi/plugins",
+                "bind": "/home/Shinobi/plugins",
+                "mode": "rw",
+                "description": "Shinobi plugins folder",
+                "editable": true
+            },
+            {
+                "value": "/etc/localtime",
+                "bind": "/etc/localtime",
+                "mode": "ro",
+                "description": "Timezone",
+                "editable": false
+            }
+        ],
+        "ports": [
+            {
+                "value": 8080,
+                "bind": 8080,
+                "type": "tcp",
+                "description": "Shinobi WebUI",
+                "editable": true
+            }
+        ]
+    }
 }

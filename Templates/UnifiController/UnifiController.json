@@ -1,8 +1,6 @@
 {
     "name": "Unifi Controller",
     "maintainer": "Linuxserver.io",
-    "repository": "lscr.io/linuxserver/unifi-controller",
-    "tag": "latest",
     "url": {
         "docker-hub": "https://hub.docker.com/r/linuxserver/unifi-controller"
     },
@@ -12,85 +10,89 @@
         "container-port": 8443,
         "ssl": true
     },
-    "command": [],
-    "env": [
-        {
-            "name": "TZ",
-            "type": "str",
-            "value": "Europe/Brussels",
-            "description": "Timezone (https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)",
-            "editable": true,
-            "regexrules": [
-                {
-                    "rule": "^[A-Za-z]+/[A-Za-z]+$",
-                    "message": "Invalid timezone"
-                }
-            ]
-        },
-        {
-            "name": "MEM_LIMIT",
-            "type": "int",
-            "value": 1024,
-            "description": "Memory limit in MB",
-            "editable": true,
-            "regexrules": [
-                {
-                    "rule": "^[0-9]+$",
-                    "message": "Invalid memory limit"
-                }
-            ]
-        },
-        {
-            "name": "MEM_STARTUP",
-            "type": "int",
-            "value": 1024,
-            "description": "Startup memory in MB",
-            "editable": true,
-            "regexrules": [
-                {
-                    "rule": "^[0-9]+$",
-                    "message": "Invalid startup memory"
-                }
-            ]
-        }
-    ],
-    "volumes": [
-        {
-            "value": "/home/unifi-controller",
-            "bind": "/config",
-            "mode": "rw",
-            "description": "Unifi Controller config folder",
-            "editable": true
-        }
-    ],
-    "ports": [
-        {
-            "value": 8443,
-            "bind": 8443,
-            "type": "tcp",
-            "description": "Unifi web admin port",
-            "editable": true
-        },
-        {
-            "value": 3478,
-            "bind": 3478,
-            "type": "udp",
-            "description": "Unifi STUN port",
-            "editable": false
-        },
-        {
-            "value": 10001,
-            "bind": 10001,
-            "type": "udp",
-            "description": "Required for AP discovery",
-            "editable": false
-        },
-        {
-            "value": 8080,
-            "bind": 8080,
-            "type": "tcp",
-            "description": "Required for device communication",
-            "editable": false
-        }
-    ]
+    "config": {
+        "repository": "lscr.io/linuxserver/unifi-controller",
+        "tag": "latest",
+        "command": [],
+        "env": [
+            {
+                "name": "TZ",
+                "type": "str",
+                "value": "Europe/Brussels",
+                "description": "Timezone (https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)",
+                "editable": true,
+                "regexrules": [
+                    {
+                        "rule": "^[A-Za-z]+/[A-Za-z]+$",
+                        "message": "Invalid timezone"
+                    }
+                ]
+            },
+            {
+                "name": "MEM_LIMIT",
+                "type": "int",
+                "value": 1024,
+                "description": "Memory limit in MB",
+                "editable": true,
+                "regexrules": [
+                    {
+                        "rule": "^[0-9]+$",
+                        "message": "Invalid memory limit"
+                    }
+                ]
+            },
+            {
+                "name": "MEM_STARTUP",
+                "type": "int",
+                "value": 1024,
+                "description": "Startup memory in MB",
+                "editable": true,
+                "regexrules": [
+                    {
+                        "rule": "^[0-9]+$",
+                        "message": "Invalid startup memory"
+                    }
+                ]
+            }
+        ],
+        "volumes": [
+            {
+                "value": "/home/unifi-controller",
+                "bind": "/config",
+                "mode": "rw",
+                "description": "Unifi Controller config folder",
+                "editable": true
+            }
+        ],
+        "ports": [
+            {
+                "value": 8443,
+                "bind": 8443,
+                "type": "tcp",
+                "description": "Unifi web admin port",
+                "editable": true
+            },
+            {
+                "value": 3478,
+                "bind": 3478,
+                "type": "udp",
+                "description": "Unifi STUN port",
+                "editable": false
+            },
+            {
+                "value": 10001,
+                "bind": 10001,
+                "type": "udp",
+                "description": "Required for AP discovery",
+                "editable": false
+            },
+            {
+                "value": 8080,
+                "bind": 8080,
+                "type": "tcp",
+                "description": "Required for device communication",
+                "editable": false
+            }
+        ]
+    }
 }
