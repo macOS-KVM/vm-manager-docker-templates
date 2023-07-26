@@ -69,29 +69,25 @@
                 "value": 8443,
                 "bind": 8443,
                 "type": "tcp",
-                "description": "Unifi web admin port",
-                "editable": true
+                "description": "Unifi web admin port"
             },
             {
                 "value": 3478,
                 "bind": 3478,
                 "type": "udp",
-                "description": "Unifi STUN port",
-                "editable": false
+                "description": "Unifi STUN port"
             },
             {
                 "value": 10001,
                 "bind": 10001,
                 "type": "udp",
-                "description": "Required for AP discovery",
-                "editable": false
+                "description": "Required for AP discovery"
             },
             {
                 "value": 8080,
                 "bind": 8080,
                 "type": "tcp",
-                "description": "Required for device communication",
-                "editable": false
+                "description": "Required for device communication"
             }
         ]
     }

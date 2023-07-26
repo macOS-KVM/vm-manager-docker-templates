@@ -71,8 +71,7 @@
                 "value": 8080,
                 "bind": 8080,
                 "type": "tcp",
-                "description": "Shinobi WebUI",
-                "editable": true
+                "description": "Shinobi WebUI"
             }
         ]
     }

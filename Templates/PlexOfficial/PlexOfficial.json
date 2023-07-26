@@ -71,43 +71,37 @@
                 "value": 32400,
                 "bind": 32400,
                 "type": "tcp",
-                "description": "Plex webui",
-                "editable": false
+                "description": "Plex webui"
             },
             {
                 "value": 3005,
                 "bind": 3005,
                 "type": "tcp",
-                "description": "",
-                "editable": false
+                "description": ""
             },
             {
                 "value": 8324,
                 "bind": 8324,
                 "type": "tcp",
-                "description": "",
-                "editable": false
+                "description": ""
             },
             {
                 "value": 32469,
                 "bind": 32469,
                 "type": "tcp",
-                "description": "",
-                "editable": false
+                "description": ""
             },
             {
                 "value": 1900,
                 "bind": 1900,
                 "type": "udp",
-                "description": "",
-                "editable": false
+                "description": ""
             },
             {
                 "value": 32410,
                 "bind": 32410,
                 "type": "udp",
-                "description": "",
-                "editable": false
+                "description": ""
             },
             {
                 "value": 32412,
@@ -120,15 +114,13 @@
                 "value": 32413,
                 "bind": 32413,
                 "type": "udp",
-                "description": "",
-                "editable": false
+                "description": ""
             },
             {
                 "value": 32414,
                 "bind": 32414,
                 "type": "udp",
-                "description": "",
-                "editable": false
+                "description": ""
             }
         ]
     }

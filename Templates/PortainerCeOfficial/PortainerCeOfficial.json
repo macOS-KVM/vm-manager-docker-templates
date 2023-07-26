@@ -36,15 +36,13 @@
                 "value": 9443,
                 "bind": 9443,
                 "type": "tcp",
-                "description": "Webui",
-                "editable": true
+                "description": "Webui"
             },
             {
                 "value": 8000,
                 "bind": 8000,
                 "type": "tcp",
-                "description": "External access",
-                "editable": false
+                "description": "External access"
             }
         ]
     }

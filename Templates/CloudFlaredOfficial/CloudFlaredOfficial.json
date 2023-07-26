@@ -23,13 +23,7 @@
         "name": "token",
         "description": "Cloudflare Tunnel Token. Get it from the Cloudflare dashboard.",
         "value": "",
-        "editable": true,
-        "regexrules": [
-          {
-            "regex": "^(?!\\\\s*$).+",
-            "message": "Token cannot be empty"
-          }
-        ]
+        "editable": true
       }
     ],
     "env": [],
