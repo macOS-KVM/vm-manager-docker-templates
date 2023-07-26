@@ -45,21 +45,21 @@
         ],
         "volumes": [
             {
-                "value": "/home/plex/config",
+                "value": "/home/plex/database",
                 "bind": "/config",
                 "mode": "rw",
                 "description": "Plex Config Folder",
                 "editable": true
             },
             {
-                "value": "/home/plex/transcde",
+                "value": "/home/plex/transcode",
                 "bind": "/transcode",
                 "mode": "rw",
                 "description": "Plex Transcode Folder",
                 "editable": true
             },
             {
-                "value": "/home/plex/data",
+                "value": "/home/plex/media",
                 "bind": "/data",
                 "mode": "rw",
                 "description": "Plex Data Folder",
