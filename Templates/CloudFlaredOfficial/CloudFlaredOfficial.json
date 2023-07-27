@@ -1,5 +1,5 @@
 {
-  "name": "Cloudflared Official",
+  "name": "Cloudflared",
   "maintainer": "Cloudflare Inc.",
   "url": {
     "docker-hub": "https://hub.docker.com/r/cloudflare/cloudflared"

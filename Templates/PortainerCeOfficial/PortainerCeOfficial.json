@@ -1,5 +1,5 @@
 {
-    "name": "Portainer CE Official",
+    "name": "Portainer CE",
     "maintainer": "Portainer.io",
     "url": {
         "docker-hub": "https://hub.docker.com/r/portainer/portainer-ce"

@@ -1,5 +1,5 @@
 {
-    "name": "Plex Official",
+    "name": "Plex",
     "maintainer": "Plex Inc.",
     "url": {
         "docker-hub": "https://hub.docker.com/r/plexinc/pms-docker/"
