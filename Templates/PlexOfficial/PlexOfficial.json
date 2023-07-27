@@ -32,7 +32,7 @@
             {
                 "name": "PLEX_CLAIM",
                 "type": "str",
-                "value": "claim-xxxxxxxxxxxxxxxxxxxx",
+                "value": "",
                 "description": "Plex Claim Token (https://www.plex.tv/claim/)",
                 "editable": true,
                 "regexrules": [
