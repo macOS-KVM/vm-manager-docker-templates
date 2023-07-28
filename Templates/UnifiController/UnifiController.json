@@ -1,5 +1,5 @@
 {
-    "name": "Unifi",
+    "name": "Unifi Controller",
     "maintainer": "Linuxserver.io",
     "url": {
         "docker-hub": "https://hub.docker.com/r/linuxserver/unifi-controller"
