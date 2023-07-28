@@ -37,7 +37,7 @@
                 "editable": true,
                 "regexrules": [
                     {
-                        "regex": "claim-[a-zA-Z0-9]{20}",
+                        "regex": "^claim-",
                         "message": "Invalid Plex Claim Token"
                     }
                 ]
