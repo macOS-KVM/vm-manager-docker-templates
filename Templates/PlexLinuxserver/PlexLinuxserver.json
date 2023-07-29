@@ -46,17 +46,10 @@
                 "editable": true
             },
             {
-                "value": "/home/plex/tv",
-                "bind": "/tv",
+                "value": "/home/plex/media",
+                "bind": "/media",
                 "mode": "rw",
-                "description": "Plex TV Folder",
-                "editable": true
-            },
-            {
-                "value": "/home/plex/movies",
-                "bind": "/movies",
-                "mode": "rw",
-                "description": "Plex Movies Folder",
+                "description": "Plex Media Folder",
                 "editable": true
             }
         ],
