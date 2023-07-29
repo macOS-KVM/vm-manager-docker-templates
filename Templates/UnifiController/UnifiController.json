@@ -8,6 +8,7 @@
     "webui": {
         "enable": true,
         "container-port": 8443,
+        "path": "/manage",
         "ssl": true
     },
     "config": {
