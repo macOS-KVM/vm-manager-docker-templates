@@ -1,0 +1,121 @@
+{
+    "name": "Plex",
+    "maintainer": "LinuxServer.io",
+    "url": {
+        "docker-hub": "https://hub.docker.com/r/linuxserver/plex"
+    },
+    "description": "Plex Media Server organizes your video, music, and photo collections and streams them to all of your screens.",
+    "webui": {
+        "enable": true,
+        "container-port": 32400,
+        "ssl": false,
+        "path": "/web"
+    },
+    "config": {
+        "repository": "lscr.io/linuxserver/plex",
+        "tag": "latest",
+        "command": [],
+        "env": [
+            {
+                "name": "TZ",
+                "type": "str",
+                "value": "",
+                "description": "Timezone (https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)",
+                "editable": true,
+                "regexrules": [
+                    {
+                        "regex": "[A-Za-z]+/[A-Za-z_]+",
+                        "message": "Invalid Timezone"
+                    }
+                ]
+            },
+            {
+                "name": "VERSION",
+                "type": "str",
+                "value": "docker",
+                "description": "Version",
+                "editable": false
+            }
+        ],
+        "volumes": [
+            {
+                "value": "/home/plex/config",
+                "bind": "/config",
+                "mode": "rw",
+                "description": "Plex Config Folder",
+                "editable": true
+            },
+            {
+                "value": "/home/plex/tv",
+                "bind": "/tv",
+                "mode": "rw",
+                "description": "Plex TV Folder",
+                "editable": true
+            },
+            {
+                "value": "/home/plex/movies",
+                "bind": "/movies",
+                "mode": "rw",
+                "description": "Plex Movies Folder",
+                "editable": true
+            }
+        ],
+        "ports": [
+            {
+                "value": 32400,
+                "bind": 32400,
+                "type": "tcp",
+                "description": "Plex webui"
+            },
+            {
+                "value": 3005,
+                "bind": 3005,
+                "type": "tcp",
+                "description": ""
+            },
+            {
+                "value": 8324,
+                "bind": 8324,
+                "type": "tcp",
+                "description": ""
+            },
+            {
+                "value": 32469,
+                "bind": 32469,
+                "type": "tcp",
+                "description": ""
+            },
+            {
+                "value": 1900,
+                "bind": 1900,
+                "type": "udp",
+                "description": ""
+            },
+            {
+                "value": 32410,
+                "bind": 32410,
+                "type": "udp",
+                "description": ""
+            },
+            {
+                "value": 32412,
+                "bind": 32412,
+                "type": "udp",
+                "description": "",
+                "editable": false
+            },
+            {
+                "value": 32413,
+                "bind": 32413,
+                "type": "udp",
+                "description": ""
+            },
+            {
+                "value": 32414,
+                "bind": 32414,
+                "type": "udp",
+                "description": ""
+            }
+        ]
+    }
+}
