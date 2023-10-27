@@ -58,11 +58,12 @@
         ],
         "volumes": [
             {
-                "value": "/home/unifi-controller",
+                "value": "/mnt/sharedfolders/docker_data/unifi-controller",
                 "bind": "/config",
                 "mode": "rw",
                 "description": "Unifi Controller config folder",
-                "editable": true
+                "editable": true,
+                "createdir": true
             }
         ],
         "ports": [

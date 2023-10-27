@@ -21,42 +21,48 @@
                 "bind": "/dev/shm/streams",
                 "mode": "rw",
                 "description": "Shinobi streams folder",
-                "editable": true
+                "editable": true,
+                "createdir": true
             },
             {
-                "value": "/home/Shinobi/config",
+                "value": "/mnt/sharedfolders/docker_data/Shinobi/config",
                 "bind": "/config",
                 "mode": "rw",
                 "description": "Shinobi config folder",
-                "editable": true
+                "editable": true,
+                "createdir": true
             },
             {
-                "value": "/home/Shinobi/libs/customAutoLoad",
+                "value": "/mnt/sharedfolders/docker_data/Shinobi/customAutoLoad",
                 "bind": "/home/Shinobi/libs/customAutoLoad",
                 "mode": "rw",
                 "description": "Shinobi customAutoLoad folder",
-                "editable": true
+                "editable": true,
+                "createdir": true
             },
             {
-                "value": "/home/Shinobi/database",
+                "value": "/mnt/sharedfolders/docker_data/Shinobi/database",
                 "bind": "/var/lib/mysql",
                 "mode": "rw",
                 "description": "Shinobi database folder",
-                "editable": true
+                "editable": true,
+                "createdir": true
             },
             {
-                "value": "/home/Shinobi/videos",
+                "value": "/mnt/sharedfolders",
                 "bind": "/home/Shinobi/videos",
                 "mode": "rw",
                 "description": "Shinobi videos folder",
-                "editable": true
+                "editable": true,
+                "createdir": false
             },
             {
-                "value": "/home/Shinobi/plugins",
+                "value": "/mnt/sharedfolders/docker_data/Shinobi/plugins",
                 "bind": "/home/Shinobi/plugins",
                 "mode": "rw",
                 "description": "Shinobi plugins folder",
-                "editable": true
+                "editable": true,
+                "createdir": true
             },
             {
                 "value": "/etc/localtime",

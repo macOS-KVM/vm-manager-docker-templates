@@ -24,11 +24,12 @@
                 "editable": true
             },
             {
-                "value": "/home/portainer-ce",
+                "value": "/mnt/sharedfolders/docker_data/portainer-ce",
                 "bind": "/data",
                 "mode": "rw",
                 "description": "Portainer data folder",
-                "editable": true
+                "editable": true,
+                "createdir": true
             }
         ],
         "ports": [

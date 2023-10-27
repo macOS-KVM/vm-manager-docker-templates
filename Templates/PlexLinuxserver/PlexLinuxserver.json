@@ -39,18 +39,20 @@
         ],
         "volumes": [
             {
-                "value": "/home/plex/config",
+                "value": "/mnt/sharedfolders/docker_data/plex/config",
                 "bind": "/config",
                 "mode": "rw",
                 "description": "Plex Config Folder",
-                "editable": true
+                "editable": true,
+                "createdir": true
             },
             {
-                "value": "/home/plex/media",
+                "value": "/mnt/sharedfolders",
                 "bind": "/media",
                 "mode": "rw",
                 "description": "Plex Media Folder",
-                "editable": true
+                "editable": true,
+                "createdir": false
             }
         ],
         "ports": [

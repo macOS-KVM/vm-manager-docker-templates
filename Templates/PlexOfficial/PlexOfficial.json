@@ -1,5 +1,5 @@
 {
-    "name": "Plex",
+    "name": "Plex Official",
     "maintainer": "Plex Inc.",
     "url": {
         "docker-hub": "https://hub.docker.com/r/plexinc/pms-docker/"
@@ -45,25 +45,28 @@
         ],
         "volumes": [
             {
-                "value": "/home/plex/database",
+                "value": "/mnt/sharedfolders/docker_data/plex/database",
                 "bind": "/config",
                 "mode": "rw",
                 "description": "Plex Config Folder",
-                "editable": true
+                "editable": true,
+                "createdir": true
             },
             {
-                "value": "/home/plex/transcode",
+                "value": "/mnt/sharedfolders/docker_data/plex/transcode",
                 "bind": "/transcode",
                 "mode": "rw",
                 "description": "Plex Transcode Folder",
-                "editable": true
+                "editable": true,
+                "createdir": true
             },
             {
-                "value": "/home/plex/media",
+                "value": "/mnt/sharedfolders",
                 "bind": "/data",
                 "mode": "rw",
                 "description": "Plex Data Folder",
-                "editable": true
+                "editable": true,
+                "createdir": false
             }
         ],
         "ports": [
