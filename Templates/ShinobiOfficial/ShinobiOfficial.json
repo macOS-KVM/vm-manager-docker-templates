@@ -12,7 +12,7 @@
     },
     "config": {
         "repository": "registry.gitlab.com/shinobi-systems/shinobi",
-        "tag": "master",
+        "tag": "latest",
         "command": [],
         "env": [],
         "volumes": [
