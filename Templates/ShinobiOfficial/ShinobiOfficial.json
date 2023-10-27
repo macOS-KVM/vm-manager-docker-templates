@@ -8,7 +8,7 @@
     "webui": {
         "enable": true,
         "container-port": 8080,
-        "ssl": true
+        "ssl": false
     },
     "config": {
         "repository": "registry.gitlab.com/shinobi-systems/shinobi",
